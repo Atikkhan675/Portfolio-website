@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atik Khan - Portfolio</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #2b1055, #7597de);
+      color: #fff;
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: rgba(0,0,0,0.4);
+    }
+    header h1 {
+      font-size: 3rem;
+      animation: fadeInDown 1.5s ease;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      opacity: 0.8;
+    }
+
+    /* Layout */
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px;
+      flex-wrap: wrap;
+    }
+    .about {
+      flex: 1;
+      padding: 20px;
+    }
+    .about h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .about p {
+      line-height: 1.6;
+      font-size: 1.1rem;
+    }
+
+    /* Photo */
+    .photo {
+      flex: 1;
+      text-align: center;
+    }
+    .photo img {
+      width: 350px;
+      height: 350px;
+      border-radius: 50%;
+      border: 8px solid #fff;
+      box-shadow: 0px 10px 25px rgba(0,0,0,0.5);
+      animation: float 3s ease-in-out infinite;
+    }
+
+    /* Projects */
+    .projects {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .projects h2 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
+    .project-card {
+      background: rgba(255,255,255,0.1);
+      padding: 25px;
+      margin: 20px auto;
+      width: 80%;
+      border-radius: 15px;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+    .project-card:hover {
+      transform: scale(1.05);
+      background: rgba(255,255,255,0.2);
+    }
+    .project-card h3 {
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+    }
+    .project-card p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    /* Contact */
+    .contact {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .contact h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .contact-info {
+      font-size: 1.2rem;
+      margin: 10px 0;
+    }
+    .social-links {
+      margin-top: 30px;
+    }
+    .social-link {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 25px;
+      border-radius: 30px;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+    .linkedin { background: #0077b5; }
+    .github { background: #333; }
+    .email { background: #d93025; }
+    .phone { background: #28a745; }
+    .social-link:hover {
+      transform: scale(1.1) rotate(-2deg);
+      box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+    }
+
+    /* Animations */
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0); }
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0,0,0,0.5);
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1> I'm Atik Khan</h1>
+    <p>Java Full Stack Developer | Web Developer | Tech Enthusiast</p>
+  </header>
+
+  <div class="container">
+    <div class="about">
+      <h2>About Me</h2>
+      <p>
+        I'm a passionate Full-Stack Developer with a strong focus on Java, Spring Boot, and modern web technologies.  
+        I love building web applications that solve real-world problems with clean code and scalable architecture.  
+        Currently pursuing my final year of Engineering, I’m preparing to build a career in top tech companies.
+      </p>
+    </div>
+    <div class="photo">
+      <!-- Replace photo.jpg with your actual image -->
+      <img src="profile.jpg" alt="Atik Khan">
+    </div>
+  </div>
+
+  <section class="projects">
+    <h2>🚀 Projects</h2>
+
+    <div class="project-card">
+      <h3>🛒 E-Commerce Web Application (Java Full Stack)</h3>
+      <p>
+        Built a fully functional E-commerce platform using Java, Spring Boot, Hibernate, MySQL, HTML, CSS, and JavaScript.  
+        Features include user authentication, product catalog, shopping cart, and secure online payments.  
+        Deployed on cloud with responsive UI for seamless user experience.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h3>📚 Student Management System</h3>
+      <p>
+        A Java application for managing student records including adding, updating, deleting, and searching student details.  
+        Implemented using Java, JDBC, and MySQL with a clean modular design.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h3>🌐 Personal Portfolio Website</h3>
+      <p>
+        Designed and developed my own portfolio using HTML, CSS, and animations to showcase my projects, skills, and contact details.  
+        Optimized for both desktop and mobile devices.
+      </p>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>📞 Contact Me</h2>
+    <p class="contact-info">📧 Email: <a href="mailto:atik7951@gmail.com" style="color:#fff; text-decoration:underline;">atik7951@gmail.com</a></p>
+    <p class="contact-info">📱 Phone: <a href="tel:+919098150271" style="color:#fff; text-decoration:underline;">9098150271</a></p>
+
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/atik-khan-48a9a9233" target="_blank" class="social-link linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="https://github.com/Atikkhan675" target="_blank" class="social-link github"><i class="fab fa-github"></i> GitHub</a>
+      <a href="mailto:atik7951@gmail.com" class="social-link email"><i class="fas fa-envelope"></i> Email</a>
+      <a href="tel:+919098150271" class="social-link phone"><i class="fas fa-phone"></i> Call</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Atik Khan | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
